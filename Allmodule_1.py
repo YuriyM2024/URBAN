@@ -6,8 +6,11 @@ students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}
 # Преобразуем множество студентов в список
 students_list = list(students)
 
-# Сортируем список
+# Сортировка списка по алфавиту
 students_sorted = sorted(students_list)
+
+# Вывод отсортированного списка
+print(students_sorted)
 
 # Словарь для хранения средних баллов
 averages = {}
@@ -15,7 +18,7 @@ averages = {}
 # Цикл по ученикам
 for student in students_sorted:
     # Получаем оценки ученика
-    scores = grades[students_list.index(student)]
+    scores = grades[students_sorted.index(student)]
     # Вычисляем средний балл
     average = sum(scores) / len(scores)
     # Сохраняем результат в словаре
