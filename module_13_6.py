@@ -22,6 +22,11 @@ async def start(message: types.Message):
     await message.answer("Выберите опцию:", reply_markup=main_menu())
 
 
+@dp.message_handler()
+async def all_messages(message: types.Message):
+    await message.answer('Введите команду /start, чтобы начать общение.')
+
+
 def main_menu():
     keyboard = InlineKeyboardMarkup()  # Создаем Inline-клавиатуру
     button1 = InlineKeyboardButton(text='Рассчитать норму калорий', callback_data='calories')
