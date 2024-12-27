@@ -6,7 +6,7 @@ from aiogram.utils import executor
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
 
-API_TOKEN = '7219539757:AAGxwcPpkhhoCUyVsnfR3RhspZ62FwQsq_k'
+API_TOKEN = 'Token'
 
 bot = Bot(token=API_TOKEN)
 storage = MemoryStorage()
