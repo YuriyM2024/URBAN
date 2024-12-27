@@ -27,10 +27,10 @@ keyboard.add(KeyboardButton("Рассчитать"), KeyboardButton("Инфор�
 # Inline клавиатура
 inline_keyboard = InlineKeyboardMarkup(row_width=2)
 inline_keyboard.add(
-    InlineKeyboardButton("Product1", callback_data="product_buying"),
-    InlineKeyboardButton("Product2", callback_data="product_buying"),
-    InlineKeyboardButton("Product3", callback_data="product_buying"),
-    InlineKeyboardButton("Product4", callback_data="product_buying"),
+    InlineKeyboardButton("Продукт 1", callback_data="product_1"),
+    InlineKeyboardButton("Продукт 2", callback_data="product_2"),
+    InlineKeyboardButton("Продукт 3", callback_data="product_3"),
+    InlineKeyboardButton("Продукт 4", callback_data="product_4"),
 )
 
 
